@@ -1,0 +1,41 @@
+{
+  "name": "Turtwig Hates Reddit",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "turtwig-hates-reddit@example.com",
+      "strict_min_version": "109.0",
+      "update_url": "https://raw.githubusercontent.com/mkorolik/turtwig_hates_reddit/turtwig/main/updates.json"
+    }
+  },
+  "browser_action": {
+    "default_popup": "hello.html",
+    "default_icon": "turtwig.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["content.js"],
+      "css": ["overlay.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    "surprise_turtwig.png",
+    "turtwig.png",
+    "sad_turtwig.png"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "tabs",
+    "*://*.reddit.com/*"
+  ],
+  "icons": {
+    "16": "turtwig.png",
+    "48": "turtwig.png",
+    "128": "turtwig.png"
+  }
+}

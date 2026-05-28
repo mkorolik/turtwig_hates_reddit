@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "turtwig-hates-reddit@example.com": {
+      "updates": [
+        {
+          "version": "1.0",
+          "update_link": "https://github.com/mkorolik/turtwig_hates_reddit/turtwig/releases/turtwig-firefox.xpi"
+        }
+      ]
+    }
+  }
+}
